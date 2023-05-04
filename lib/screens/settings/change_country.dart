@@ -8,8 +8,8 @@ class ChangeCountryPage extends StatefulWidget {
 
 class _ChangeCountryPageState extends State<ChangeCountryPage> {
   List<String> languages = [
-    'China',
-    'Spain',
+    'India',
+    'America',
     'United Kindom',
     'Romania',
     'Germany',

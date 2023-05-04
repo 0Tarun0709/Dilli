@@ -8,9 +8,9 @@ class ChangeLanguagePage extends StatefulWidget {
 
 class _ChangeCountryPageState extends State<ChangeLanguagePage> {
   List<String> languages = [
-    'Chinesse',
-    'Spanish',
     'English',
+    'Spanish',
+    'Telugu',
     'Romanian',
     'German',
     'Portuguese',

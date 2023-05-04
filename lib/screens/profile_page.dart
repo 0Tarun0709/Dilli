@@ -26,7 +26,7 @@ class ProfilePage extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Text(
-                    'Rose Helbert',
+                    'Keep Smiling',
                     style: TextStyle(fontWeight: FontWeight.bold),
                   ),
                 ),

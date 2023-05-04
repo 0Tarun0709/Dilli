@@ -16,7 +16,7 @@ class _CategoryListPageState extends State<CategoryListPage> {
       Color(0xffFCE183),
       Color(0xffF68D7F),
       'Gadgets',
-      'assets/headphones_13.png',
+      'assets/headphone_13.png',
     ),
     Category(
       Color(0xffF749A2),
