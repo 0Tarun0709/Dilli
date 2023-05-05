@@ -1,5 +1,6 @@
 import 'package:ecommerce_int2/app_properties.dart';
 import 'package:ecommerce_int2/screens/intro_page.dart';
+import 'package:ecommerce_int2/screens/main/main_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:pin_code_text_field/pin_code_text_field.dart';
@@ -72,7 +73,7 @@ class _ConfirmOtpPageState extends State<ConfirmOtpPage> {
       child: InkWell(
         onTap: () {
           Navigator.of(context)
-              .push(MaterialPageRoute(builder: (_) => IntroPage()));
+              .push(MaterialPageRoute(builder: (_) => MainPage()));
         },
         child: Container(
           width: MediaQuery.of(context).size.width / 2,

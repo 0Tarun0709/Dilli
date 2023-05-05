@@ -1,7 +1,10 @@
 
 import 'package:ecommerce_int2/app_properties.dart';
+import 'package:ecommerce_int2/screens/auth/confirm_otp_page.dart';
+import 'package:ecommerce_int2/screens/auth/forgot_password_page.dart';
 import 'package:ecommerce_int2/screens/main/main_page.dart';
 import 'package:flutter/material.dart';
+import 'package:ecommerce_int2/screens/intro_page.dart';
 
 import 'register_page.dart';
 
@@ -49,7 +52,7 @@ class _WelcomeBackPageState extends State<WelcomeBackPage> {
       child: InkWell(
         onTap: () {
           Navigator.of(context)
-              .push(MaterialPageRoute(builder: (_) => MainPage()));
+              .push(MaterialPageRoute(builder: (_) => IntroPage()));
         },
         child: Container(
           width: MediaQuery.of(context).size.width / 2,
@@ -116,7 +119,10 @@ class _WelcomeBackPageState extends State<WelcomeBackPage> {
               ],
             ),
           ),
+
+        
           loginButton,
+          
         ],
       ),
     );
@@ -135,7 +141,10 @@ class _WelcomeBackPageState extends State<WelcomeBackPage> {
             ),
           ),
           InkWell(
-            onTap: () {},
+            onTap: () {
+              Navigator.of(context)
+                  .push(MaterialPageRoute(builder: (_) => ForgotPasswordPage()));
+            },
             child: Text(
               'Reset password',
               style: TextStyle(
@@ -178,6 +187,18 @@ class _WelcomeBackPageState extends State<WelcomeBackPage> {
                 Spacer(flex: 2),
                 loginForm,
                 Spacer(flex: 2),
+
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Container( padding: EdgeInsets.all(0), 
+                     
+                     child:TextButton(child: Text('Register New User') ,onPressed: () {
+                    Navigator.of(context)
+                        .push(MaterialPageRoute(builder: (_) => RegisterPage()));
+              } ,), ),
+                  ],
+                ),
                 forgotPassword
               ],
             ),
